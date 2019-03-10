@@ -1,3 +1,73 @@
-.container {
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px");
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Slabo 27px', serif; */
+
+.aboutContainerOuter {
   background-color: white;
+  height: 600vh;
+  width: 100vw;
+  border-style: solid;
+  overflow-x: hidden;
+}
+
+.aboutContainerOuter .aboutContainerInnerDiv {
+  height: 95vh;
+  width: 100vw;
+  background-image: url("../../images/bridgeBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.aboutContainerOuter .aboutContainerInnerDiv h1 {
+  font-family: "Slabo 30px", serif;
+  font-size: 70px;
+  color: black;
+  grid-row: 2;
+  grid-column: 6/11;
+  margin: 0;
+}
+
+.aboutContainerOuter .aboutBioDiv {
+  height: 70vh;
+  width: 100vw;
+  background-image: linear-gradient(rgb(189, 186, 186), rgb(95, 95, 95));
+  border-color: white;
+  border-style: solid;
+  background-image: url("../../images/aboutAbstract.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.aboutContainerOuter .aboutBioBox {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.aboutContainerOuter .aboutBioDiv .aboutHeaderText {
+  margin: 0;
+  text-align: center;
+  padding-left: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 45px;
+  color: black;
+  font-family: cursive;
+  background-color: white;
+}
+
+.aboutContainerOuter .aboutBioDiv .aboutBioParagraph {
+  grid-row: 2/8;
+  grid-column: 3/7;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  line-height: 30px;
 }
