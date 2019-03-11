@@ -2,6 +2,8 @@ import React from "react";
 import "./aboutPage.css";
 import Navbar from "../../Components/NavBar/menu";
 import SkillBox from "../../Components/SkillBox/skillBox";
+import CodingHub from "../../images/codingHub.png";
+import PSULogo from "../../images/PSUlogo.png";
 
 const AboutPage = () => {
   return (
@@ -10,6 +12,10 @@ const AboutPage = () => {
       <div className="aboutContainerInnerDiv">
         <h1>Software Engineer</h1>
       </div>
+      <div className="blackBox1" />
+      <div className="blackBox2" />
+      <div className="blackBox1" />
+
       <div className="aboutBioDiv">
         <h3 className="aboutHeaderText">Who Am I</h3>
         <div className=" aboutBioBox">
@@ -24,8 +30,13 @@ const AboutPage = () => {
             of a development team that looks to make each individual member
             better with every project.
           </p>
+          <img src={CodingHub} className="codingHubImg" alt="codingHub" />
+          <img src={PSULogo} className="PSUImg" alt="plattsburgh" />
         </div>
       </div>
+      <div className="blackBox1" />
+      <div className="blackBox2" />
+      <div className="blackBox1" />
     </div>
   );
 };

@@ -26,11 +26,22 @@ font-family: 'Slabo 27px', serif; */
 
 .aboutContainerOuter .aboutContainerInnerDiv h1 {
   font-family: "Slabo 30px", serif;
-  font-size: 70px;
+  font-size: 40px;
   color: black;
-  grid-row: 2;
+  grid-row: 5;
   grid-column: 6/11;
   margin: 0;
+}
+.aboutContainerOuter .blackBox1 {
+  height: 50px;
+  background: black;
+  border-style: solid;
+  border-color: white;
+}
+.aboutContainerOuter .blackBox2 {
+  height: 50px;
+  background: white;
+  border-style: solid;
 }
 
 .aboutContainerOuter .aboutBioDiv {
@@ -55,19 +66,31 @@ font-family: 'Slabo 27px', serif; */
   padding-left: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 45px;
-  color: black;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 4px 4px #000000;
   font-family: cursive;
   background-color: white;
 }
 
 .aboutContainerOuter .aboutBioDiv .aboutBioParagraph {
-  grid-row: 2/8;
+  grid-row: 1/8;
   grid-column: 3/7;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-family: "Roboto ", sans-serif;
   font-weight: bold;
   color: black;
   text-align: center;
   line-height: 30px;
+}
+
+.aboutContainerOuter .aboutBioDiv .codingHubImg {
+  height: 200px;
+  grid-column: 8/10;
+  padding-top: 20px;
+}
+.aboutContainerOuter .aboutBioDiv .PSUImg {
+  height: 200px;
+  grid-column: 10/12;
+  grid-row: 2;
 }
