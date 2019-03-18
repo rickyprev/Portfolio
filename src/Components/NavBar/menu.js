@@ -9,24 +9,8 @@ const Menu = () => {
     <div className="menuBar">
       <div className="homeLink">
         <Link to="/">
-          <h2>Home</h2>
+          <h2 className="menuText">Home</h2>
         </Link>
-      </div>
-
-      <div className="aboutLink">
-        <Link to="/about">
-          <h2>About</h2>
-        </Link>
-      </div>
-      <div className="servicesLink">
-        <Link to="/services">
-          <h2>Services </h2>
-        </Link>
-      </div>
-      <div className="icon">
-        <i className="fab fa-linkedin linkedin" />
-
-        <i className="fab fa-git-square git" />
       </div>
     </div> //end menuBar div
   );

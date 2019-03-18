@@ -6,37 +6,45 @@ font-family: 'Slabo 27px', serif; */
 
 .aboutContainerOuter {
   background-color: white;
-  height: 600vh;
-  width: 100vw;
-  border-style: solid;
-  overflow-x: hidden;
+  height: 300vh;
+  box-sizing: border-box;
 }
 
 .aboutContainerOuter .aboutContainerInnerDiv {
   height: 95vh;
-  width: 100vw;
-  background-image: url("../../images/bridgeBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
+  z-index: 0;
+}
+.aboutContainerOuter .aboutContainerInnerDiv #myVideo {
+  height: 100vh;
+  width: calc((100%-3px));
+  z-index: 0;
+  position: absolute;
+  object-fit: fill;
 }
 
 .aboutContainerOuter .aboutContainerInnerDiv h1 {
   font-family: "Slabo 30px", serif;
   font-size: 40px;
-  color: black;
+  color: white;
   grid-row: 5;
   grid-column: 6/11;
   margin: 0;
+  z-index: 2;
+  position: relative;
 }
 .aboutContainerOuter .blackBox1 {
   height: 50px;
   background: black;
   border-style: solid;
   border-color: white;
+  z-index: 5;
+  position: relative;
 }
 .aboutContainerOuter .blackBox2 {
   height: 50px;
@@ -44,53 +52,104 @@ font-family: 'Slabo 27px', serif; */
   border-style: solid;
 }
 
-.aboutContainerOuter .aboutBioDiv {
-  height: 70vh;
-  width: 100vw;
-  background-image: linear-gradient(rgb(189, 186, 186), rgb(95, 95, 95));
-  border-color: white;
-  border-style: solid;
-  background-image: url("../../images/aboutAbstract.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.aboutContainerOuter .aboutBioBox {
+.aboutBioDivParent {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
-.aboutContainerOuter .aboutBioDiv .aboutHeaderText {
-  margin: 0;
-  text-align: center;
-  padding-left: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+.aboutBioDivLeft {
+  border-radius: 20px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  grid-column: 1;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.aboutBioDivRight {
+  display: grid;
+  justify-content: center;
+
+  background-image: url("../../images/codingHubTeam.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.aboutBioDivParent .aboutBioDivLeft .aboutHeaderText {
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
-  color: white;
-  text-shadow: 2px 4px 4px #000000;
-  font-family: cursive;
-  background-color: white;
+}
+.aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
+  font-family: "Roboto", sans-serif;
 }
 
-.aboutContainerOuter .aboutBioDiv .aboutBioParagraph {
-  grid-row: 1/8;
-  grid-column: 3/7;
-  font-size: 22px;
-  font-family: "Roboto ", sans-serif;
-  font-weight: bold;
-  color: black;
+.aboutBioImages {
+  align-items: center;
+  justify-items: center;
+}
+
+.aboutContainerOuter .skillsContainer {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutContainerOuter .skillsChildLeft {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.aboutContainerOuter .skillsChildLeft .leftTop {
+  background-image: url("../../images/window.jpg");
+  filter: grayscale(80%);
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutContainerOuter .skillsChildRight {
+  height: 70vh;
   text-align: center;
-  line-height: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.aboutContainerOuter .skillsChildRight .languageText {
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
+  grid-row: 2;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.aboutContainerOuter .skillsChildRight .shuttler {
+  grid-row: 3;
+  width: 100%;
 }
 
-.aboutContainerOuter .aboutBioDiv .codingHubImg {
-  height: 200px;
-  grid-column: 8/10;
-  padding-top: 20px;
+.aboutContainerOuter .footer {
+  height: 11vh;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  color: white;
 }
-.aboutContainerOuter .aboutBioDiv .PSUImg {
-  height: 200px;
-  grid-column: 10/12;
-  grid-row: 2;
+
+.aboutContainerOuter .footer a .fontAwe {
+  font-size: 50px;
+  width: 200px;
+  padding-top: 22px;
+  color: white;
+}
+.aboutContainerOuter .footer .footerText {
+  font-size: 20px;
+  margin-top: 30px;
 }

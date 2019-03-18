@@ -4,63 +4,14 @@
 font-family: 'Oswald', sans-serif;
 font-family: 'Slabo 27px', serif; */
 .menuBar {
-  background: #000000;
-  padding-top: 0px;
-  width: 12.5vw;
-  height: 100vh;
-  /* opacity: 0.8; */
-  text-align: left;
+  background: black;
+
+  width: 8vw;
+  height: 6vh;
+  opacity: 0.8;
+
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: repeat(10, 10%);
-  position: fixed;
-  z-index: 100;
 
-  border-color: white;
-  border-style: groove;
-}
-
-.menuBar .homeLink {
-  grid-row: 3;
-  justify-self: center;
-}
-.menuBar .aboutLink {
-  grid-row: 5;
-  justify-self: center;
-}
-.menuBar .servicesLink {
-  grid-row: 7;
-  justify-self: center;
-}
-.menuBar h2 {
-  color: white;
-  text-shadow: 4px 2px #535353;
-
-  font-weight: bold;
-  font-size: 28px;
-  font-style: oblique;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-.menuBar .icon {
-  list-style: none;
-
-  grid-column: 1/2;
-  grid-row: 10;
-}
-.menuBar a {
-  list-style: none;
-
-  text-decoration: none;
-}
-.menuBar .icon i {
-  font-size: 50px;
-  margin-left: 70px;
-}
-.menuBar .icon .git {
-  filter: grayscale(100%);
-}
-.menuBar .icon .linkedin {
-  filter: grayscale(100%);
+  box-shadow: 10px 1px 20px 1px rgb(49, 49, 49);
 }
