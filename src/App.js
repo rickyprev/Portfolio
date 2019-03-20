@@ -3,7 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import AboutPage from "../src/Pages/AboutPage/aboutPage";
 import HomePage from "./Pages/HomePage/homePage";
-// import route Components here
+import ContactPage from "./Pages/ContactPage/contactPage";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -20,6 +21,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/about" component={AboutPage} />
+            <Route exact path="/contact" component={ContactPage} />
           </Switch>
         </div>
       </Router>

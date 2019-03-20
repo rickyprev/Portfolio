@@ -20,6 +20,10 @@ font-family: 'Slabo 27px', serif; */
   grid-template-rows: repeat(10, 1fr);
   z-index: 0;
 }
+.aboutContainerOuter .aboutContainerInnerDiv .menuBar {
+  z-index: 5;
+  position: absolute;
+}
 .aboutContainerOuter .aboutContainerInnerDiv #myVideo {
   height: 100vh;
   width: calc((100%-3px));
@@ -30,7 +34,7 @@ font-family: 'Slabo 27px', serif; */
 
 .aboutContainerOuter .aboutContainerInnerDiv h1 {
   font-family: "Slabo 30px", serif;
-  font-size: 40px;
+  font-size: 80px;
   color: white;
   grid-row: 5;
   grid-column: 6/11;

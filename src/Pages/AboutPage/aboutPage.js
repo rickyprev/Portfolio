@@ -10,8 +10,9 @@ import Shuttler from "../../images/shuttler.png";
 const AboutPage = () => {
   return (
     <div className="aboutContainerOuter">
-      {/* <Navbar /> */}
       <div className="aboutContainerInnerDiv">
+        <Navbar className="menuBar" />
+
         <video autoPlay muted loop id="myVideo">
           <source src={ScriptType} type="video/mp4" heih />
         </video>

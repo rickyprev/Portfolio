@@ -1,17 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px");
-
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Slabo 27px', serif; */
 .menuBar {
-  background: black;
+  position: relative;
+  font-family: "Slabo 27px", serif;
+  font-size: 30px;
+}
 
-  width: 8vw;
-  height: 6vh;
-  opacity: 0.8;
+.menuBar .homeLink {
+  margin: 0;
+}
 
-  display: grid;
-  grid-template-columns: 1;
+.menuBar .homeList {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
-  box-shadow: 10px 1px 20px 1px rgb(49, 49, 49);
+.menuBar .homeList .list {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  padding-right: 20px;
 }
