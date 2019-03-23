@@ -24,7 +24,9 @@ const AboutPage = () => {
 
       <div className="aboutBioDivParent">
         <div className="aboutBioDivLeft">
-          <h3 className="aboutHeaderText">Who Am I</h3>
+          <div className="headerText">
+            <h3 className="aboutHeaderText">Who Am I</h3>
+          </div>
 
           <div className="aboutBioSummary">
             I'm a recent graduate from the State University of New York at

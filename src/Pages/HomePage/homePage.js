@@ -12,8 +12,6 @@ const IndexPage = () => {
         <h3 className="fname">Keith</h3>
         <h3 className="lname">Prevost</h3>
       </div>
-
-      <div className="homeButton" />
     </div>
   );
 };

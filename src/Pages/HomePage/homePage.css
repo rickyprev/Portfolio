@@ -15,16 +15,8 @@ font-family: 'Slabo 27px', serif; */
   background-size: cover;
   z-index: -2;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-row: 1;
-  grid-column: 1;
-}
-
-.skillDiv {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  padding-top: 10px;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .containerHome .fname {
@@ -48,7 +40,37 @@ font-family: 'Slabo 27px', serif; */
   height: 200px;
   z-index: 20;
   position: absolute;
-  grid-row: 3/6;
-  grid-column: 3/6;
+  grid-row: 1;
   text-shadow: 2px 4px #000000;
+  padding-top: 300px;
+}
+
+@media only screen and (min-width: 320px) {
+  .containerHome .nameDisplay {
+    padding-top: 200px;
+  }
+  .containerHome .fname {
+    font-size: 50px;
+    padding-right: 70px;
+  }
+  .containerHome .lname {
+    font-size: 65px;
+    padding-left: 70px;
+  }
+
+  .containerHome .menuBar .homeList .list {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .containerHome .nameDisplay {
+    padding-top: 350px;
+  }
+  .containerHome .fname {
+    font-size: 60px;
+  }
+  .containerHome .lname {
+    font-size: 75px;
+  }
 }
