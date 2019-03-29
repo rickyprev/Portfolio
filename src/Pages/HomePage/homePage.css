@@ -19,6 +19,10 @@ font-family: 'Slabo 27px', serif; */
   justify-items: center;
 }
 
+.menuBar {
+  justify-self: left;
+}
+
 .containerHome .fname {
   font-size: 120px;
   text-align: center;
@@ -55,7 +59,6 @@ font-family: 'Slabo 27px', serif; */
   }
   .containerHome .lname {
     font-size: 65px;
-    padding-left: 70px;
   }
 
   .containerHome .menuBar .homeList .list {
@@ -63,14 +66,48 @@ font-family: 'Slabo 27px', serif; */
   }
 }
 
-@media only screen and (min-width: 411px) {
+@media only screen and (min-width: 480px) {
   .containerHome .nameDisplay {
-    padding-top: 350px;
+    padding-top: 250px;
   }
   .containerHome .fname {
-    font-size: 60px;
+    font-size: 70px;
+    padding-right: 70px;
   }
   .containerHome .lname {
-    font-size: 75px;
+    font-size: 85px;
+    padding-left: 70px;
+  }
+
+  .containerHome .menuBar .homeList .list {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*none needed. previous 480 querie works for this viewport*/
+}
+@media only screen and (min-width: 992px) {
+  /*none needed. previous 480 querie works for this viewport*/
+}
+@media only screen and (min-width: 1200px) {
+  .containerHome .menuBar .homeList .list {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .containerHome .menuBar .homeList .list {
+    font-size: 70px;
+  }
+  .containerHome .nameDisplay {
+    padding-top: 400px;
+  }
+  .containerHome .fname {
+    font-size: 120px;
+    padding-right: 120px;
+  }
+  .containerHome .lname {
+    font-size: 140px;
+    padding-left: 140px;
   }
 }

@@ -44,14 +44,18 @@
   align-self: center;
   margin-top: 270px;
 }
-.containerContact .contactBack .aboutForm .git {
+.containerContact .contactBack .aboutForm a {
+  text-decoration: none;
+}
+.containerContact .contactBack .aboutForm .git h2 {
   grid-row: 4;
   justify-self: left;
+  color: white;
 }
-.containerContact .contactBack .aboutForm .linked {
+.containerContact .contactBack .aboutForm .linked h2 {
   grid-row: 4;
   justify-self: right;
-  padding-top: 50px;
+  color: white;
 }
 .containerContact .contactBack .aboutForm .contactBothIcons {
   margin-top: auto;
@@ -65,4 +69,101 @@
 .containerContact .contactBack .aboutForm .iconText {
   font-size: 20px;
   margin-top: 30px;
+}
+
+@media only screen and (min-width: 320px) {
+  .containerContact .contactBack .menuBar .list {
+    font-size: 25px;
+  }
+
+  .containerContact {
+    background-position: -350px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .containerContact .contactBack .aboutForm {
+    height: 430px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+  }
+  .containerContact .contactBack .aboutForm .contactFormText {
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerContact .contactBack .aboutForm .contactBothIcons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+  }
+  .containerContact .contactBack .aboutForm a .fontAwe {
+    font-size: 35px;
+  }
+
+  .containerContact .contactBack .aboutForm a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .containerContact .contactBack .aboutForm {
+    margin-top: 30px;
+  }
+  .containerContact .contactBack .aboutForm .contactFormText {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .containerContact {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .containerContact .contactBack .aboutForm {
+    height: 430px;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .containerContact .contactBack .aboutForm {
+    height: 430px;
+    width: 720px;
+  }
+  .containerContact .contactBack .aboutForm .contactFormText {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /*formatting was good from previous media query*/
+}
+
+@media only screen and (min-width: 1500px) {
+  .containerContact .contactBack .aboutForm {
+    height: 630px;
+    width: 1600px;
+    margin-top: 150px;
+  }
+  .containerContact .contactBack .aboutForm .contactFormText {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .containerContact .contactBack .aboutForm a .fontAwe {
+    font-size: 95px;
+  }
+
+  .containerContact .contactBack .aboutForm a {
+    font-size: 20px;
+  }
+  .containerContact .contactBack .aboutForm .contactFormText {
+    font-size: 42px;
+  }
+  .containerContact .contactBack .menuBar .list {
+    font-size: 50px;
+  }
 }

@@ -11,8 +11,7 @@ const ContactPage = () => {
         <div className="aboutForm">
           <h2 className="contactFormText">
             Thank you for taking the time to view my page! The best way to
-            contact me is my email at rickyprev1928@gmail.com. I can provide a
-            copy of my resume as well as references upon request
+            contact me is my email at rickyprev1928@gmail.com.
           </h2>
           <div className="contactBothIcons">
             <div className="git">

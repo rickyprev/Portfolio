@@ -8,6 +8,7 @@ font-family: 'Slabo 27px', serif; */
   background-color: white;
   height: 300vh;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 .aboutContainerOuter .aboutContainerInnerDiv {
@@ -18,48 +19,43 @@ font-family: 'Slabo 27px', serif; */
   display: grid;
   grid-template-columns: 1fr;
   z-index: 0;
+  justify-content: center;
 }
 
 .aboutContainerOuter .aboutContainerInnerDiv .menuBar {
   z-index: 5;
-  position: absolute;
   margin-right: 0px;
+  justify-self: left;
 }
 .aboutContainerOuter .aboutContainerInnerDiv .menuBar .list {
   font-size: 25px;
 }
-.aboutContainerOuter .aboutContainerInnerDiv #myVideo {
-  height: 96vh;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 0;
+.aboutContainerOuter .aboutContainerInnerDiv .videoWrapper {
+  width: 100vw;
+  z-index: 1;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
   position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.aboutContainerOuter .aboutContainerInnerDiv h1 {
+.aboutContainerOuter .aboutContainerInnerDiv #myVideo {
+  z-index: 1;
+}
+
+.aboutContainerOuter .aboutContainerInnerDiv .title {
   font-family: "Slabo 30px", serif;
-  font-size: 60px;
+  font-size: 44px;
   color: white;
   grid-row: 2;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin: 0;
-  z-index: 2;
-  position: relative;
-}
-.aboutContainerOuter .blackBox1 {
-  height: 50px;
-  background: black;
-  border-style: solid;
-  border-color: white;
-  z-index: 5;
-  position: relative;
-}
-.aboutContainerOuter .blackBox2 {
-  height: 50px;
-  background: white;
-  border-style: solid;
+  z-index: 10;
+  /* position: relative; */
 }
 
 .aboutBioDivParent {
@@ -75,6 +71,7 @@ font-family: 'Slabo 27px', serif; */
   height: 600px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 50px;
 }
 
 .aboutBioDivRight {
@@ -88,15 +85,28 @@ font-family: 'Slabo 27px', serif; */
 }
 .aboutBioDivParent .aboutBioDivLeft .aboutHeaderText {
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.aboutBioImages {
-  align-items: center;
-  justify-items: center;
+.aboutContainerOuter .projectsDiv {
+  height: 60vh;
+  font-family: "Roboto", sans-serif;
+}
+.aboutContainerOuter .projectsDiv .languageText {
+  height: 80vh;
+  margin: 0;
+  font-size: 14px;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
 }
 
 .aboutContainerOuter .skillsContainer {
@@ -122,45 +132,56 @@ font-family: 'Slabo 27px', serif; */
 }
 
 .aboutContainerOuter .skillsChildRight {
-  height: 70vh;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
+  overflow-x: hidden;
 }
 .aboutContainerOuter .skillsChildRight .languageText {
-  height: 100%;
-  margin: 0;
   font-size: 20px;
-  grid-row: 2;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 20px;
+  padding-top: 80px;
   font-family: "Roboto", sans-serif;
 }
-.aboutContainerOuter .skillsChildRight .shuttler {
-  grid-row: 3;
-  width: 100%;
+
+.aboutContainerOuter .projectPics {
+  height: 30vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.aboutContainerOuter .projectsDiv .projectHeader {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+.aboutContainerOuter .projectPics .shuttlerPic {
+  width: 100vw;
 }
 
 .aboutContainerOuter .footer {
-  height: 11vh;
   background-color: rgb(31, 31, 31);
-  display: flex;
-  justify-content: center;
   color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-radius: 10px;
+  align-items: center;
+}
+.aboutContainerOuter .footer a {
+  max-width: 25%;
+}
+.aboutContainerOuter .footer a .fontAwe {
+  color: white;
+  margin-left: -50%;
 }
 
-.aboutContainerOuter .footer a .fontAwe {
-  font-size: 50px;
-  width: 200px;
-  padding-top: 22px;
-  color: white;
-}
 .aboutContainerOuter .footer .footerText {
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 @media only screen and (min-width: 320px) {
@@ -176,48 +197,41 @@ font-family: 'Slabo 27px', serif; */
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     margin: 0;
-    padding-top: 85px;
   }
   .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    /* padding-bottom: 250px; */
+    padding-bottom: 20px;
   }
   .aboutBioDivParent .aboutBioDivLeft {
+    height: 70vh;
     padding-right: 0;
   }
   /* ------------------------------------------------------ */
-
+  .aboutContainerOuter .aboutContainerInnerDiv {
+    height: 80vh;
+  }
+  .aboutContainerOuter .aboutContainerInnerDiv #myVideo {
+    height: 80vh;
+  }
   .aboutContainerOuter .skillsContainer {
     display: grid;
     grid-template-columns: 1fr;
+    height: 100vh;
   }
   .aboutContainerOuter .skillsChildLeft {
-    visibility: hidden;
+    height: 0vh;
   }
   .aboutContainerOuter .skillsChildLeft .leftTop {
-    background-position: right;
-    background-size: cover;
-    width: 100%;
-    height: 70%;
-    /* display: none; */
+    height: 0vh;
   }
   .aboutContainerOuter .skillsChildRight .languageText {
-    height: 100%;
-
-    font-size: 17px;
+    font-size: 14px;
 
     font-family: "Roboto", sans-serif;
   }
   .aboutContainerOuter .skillsChildRight {
-  }
-  .aboutContainerOuter .skillsContainer {
-    height: 1vh;
-  }
-
-  .aboutContainerOuter .footer {
-    height: 11vh;
-    margin-top: 400px;
+    height: 10vh;
   }
 
   .aboutContainerOuter .footer a .fontAwe {
@@ -226,7 +240,173 @@ font-family: 'Slabo 27px', serif; */
     padding-top: 22px;
   }
   .aboutContainerOuter .footer .footerText {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+  }
+  .aboutContainerOuter .skillBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .aboutContainerOuter .skillBox .fontAwe {
+    font-size: 20px;
+  }
+  .aboutContainerOuter .aboutBioDivParent .aboutBioDivLeft .aboutBioImages {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .aboutContainerOuter .aboutContainerInnerDiv .menuBar .list {
+    font-size: 35px;
+  }
+  .aboutContainerOuter .projectsDiv .languageText {
+    font-size: 22px;
+  }
+  .aboutContainerOuter .projectsDiv .projectHeader {
+    margin-top: 40px;
+  }
+  .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
+    font-size: 22px;
+  }
+
+  .aboutContainerOuter .footer {
+    justify-content: center;
+  }
+  .aboutContainerOuter .footer .footerText {
+    font-size: 25px;
+    color: white;
+    padding-right: 30px;
+  }
+  .aboutContainerOuter .footer a .fontAwe {
+    margin-left: -20%;
+    font-size: 50px;
+  }
+  .aboutContainerOuter
+    .aboutBioDivParent
+    .aboutBioDivLeft
+    .aboutBioImages
+    .aboutLogo {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutContainerOuter .projectPics {
+    padding-bottom: 140px;
+  }
+  .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+  .aboutContainerOuter .projectsDiv .projectHeader {
+    margin-top: 0px;
+  }
+
+  .aboutContainerOuter .aboutContainerInnerDiv .menuBar .list {
+    margin-top: 20px;
+  }
+  .aboutContainerOuter .aboutContainerInnerDiv .title {
+    padding-bottom: 100px;
+    font-size: 65px;
+  }
+  .aboutContainerOuter .projectPics {
+    padding-bottom: 80px;
+  }
+  .aboutContainerOuter
+    .aboutBioDivParent
+    .aboutBioDivLeft
+    .aboutBioImages
+    .aboutLogo {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .aboutContainerOuter .projectPics {
+    padding-bottom: 190px;
+  }
+  .aboutContainerOuter .aboutContainerInnerDiv #myVideo {
+    height: auto;
+    width: 100%;
+  }
+  .aboutBioDivParent {
+    margin-top: 30px;
+  }
+  .aboutContainerOuter .aboutContainerInnerDiv .title {
+    padding-bottom: 350px;
+    font-size: 65px;
+  }
+  .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
+    padding-top: 0;
+    font-size: 30px;
+  }
+  .aboutContainerOuter .projectsDiv .languageText {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .aboutContainerOuter .aboutContainerInnerDiv .menuBar .list {
+    font-size: 50px;
+  }
+  .aboutContainerOuter .aboutBioDivParent {
+    padding-top: 190px;
+    margin-top: 0;
+  }
+  .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+  .aboutContainerOuter .aboutContainerInnerDiv .title {
+    padding-bottom: 0px;
+    font-size: 65px;
+  }
+  .aboutContainerOuter .projectPics {
+    margin-bottom: 150px;
+  }
+  .aboutContainerOuter .projectsDiv .projectHeader {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .aboutContainerOuter .aboutBioDivParent {
+    padding-top: 390px;
+    margin-top: 50px;
+  }
+  .aboutContainerOuter .projectPics {
+    margin-bottom: 350px;
+  }
+  .aboutContainerOuter .projectsDiv .languageText {
+    font-size: 30px;
+  }
+  .aboutBioDivParent .aboutBioDivLeft .aboutBioSummary {
+    font-size: 30px;
+    padding-top: 150px;
+  }
+  .aboutContainerOuter .projectsDiv .projectHeader {
+    font-size: 70px;
+    margin-top: 130px;
+  }
+  .aboutBioDivParent .aboutBioDivLeft .aboutHeaderText {
+    font-size: 70px;
+  }
+  .aboutContainerOuter .projectPics {
+    padding-bottom: 481px;
+  }
+  .aboutContainerOuter .aboutContainerInnerDiv .menuBar .list {
+    font-size: 60px;
+  }
+  .aboutContainerOuter .footer .footerText {
+    font-size: 35px;
+  }
+  .aboutContainerOuter .footer a .fontAwe {
+    font-size: 80px;
+  }
+  .aboutContainerOuter .skillBox .fontAwe {
+    font-size: 35px;
   }
 }

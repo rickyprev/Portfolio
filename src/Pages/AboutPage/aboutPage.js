@@ -12,15 +12,14 @@ const AboutPage = () => {
     <div className="aboutContainerOuter">
       <div className="aboutContainerInnerDiv">
         <Navbar className="menuBar" />
+        <h1 className="title">Software Engineer</h1>
 
-        <video autoPlay muted loop id="myVideo">
-          <source src={ScriptType} type="video/mp4" heih />
-        </video>
-        <h1>Software Engineer</h1>
+        <div className="videoWrapper">
+          <video autoPlay muted loop id="myVideo">
+            <source src={ScriptType} type="video/mp4" heih />
+          </video>
+        </div>
       </div>
-      <div className="blackBox1" />
-      <div className="blackBox2" />
-      <div className="blackBox1" />
 
       <div className="aboutBioDivParent">
         <div className="aboutBioDivLeft">
@@ -38,35 +37,36 @@ const AboutPage = () => {
             individual member better with every project.
           </div>
           <div className="aboutBioImages">
-            <img src={PSULogo} width="100px" alt="" />
-            <img src={CodingHub} width="100px" alt="" />
+            <img src={PSULogo} width="100px" alt="" className="aboutLogo" />
+            <img src={CodingHub} width="100px" alt="" className="aboutLogo" />
           </div>
         </div>
         <div className="aboutBioDivRight" />
       </div>
 
-      <div className="blackBox1" />
-      <div className="blackBox2" />
-      <div className="blackBox1" />
-      <div className="skillsContainer">
-        <div className="skillsChildLeft">
-          <div className="leftTop" />
-        </div>
-        <div className="skillsChildRight">
-          <h2 className="languageText">
-            The majority of the projects I've been involved with in the last
-            year have involved ReactJS, SQL, and Python. Shuttler is a bus
-            tracking app for Android and IOS myself and the rest of CodingHub
-            created for SUNY Plattsburgh to help students who use the shuttle
-            with time management. The web site was built using ReactJS.
-          </h2>
-          <a href="https://www.psushuttle.com/">
-            <img src={Shuttler} width="100px" alt="" className="shuttler" />
-          </a>
+      <div className="skillsChildLeft">
+        <div className="leftTop" />
+      </div>
+      <div className="skillsChildRight" />
+      <div className="projectsDiv">
+        <h1 className="projectHeader">Projects</h1>
+        <div className="languageText">
+          The majority of the projects I've been involved with in the last year
+          have involved ReactJS, SQL, and Python. Shuttler is a bus tracking app
+          for Android and IOS myself and the rest of CodingHub created for SUNY
+          Plattsburgh to help students who use the shuttle with time management.
+          The web site was built using ReactJS.
         </div>
       </div>
+      <div className="projectPics">
+        <a href="https://www.psushuttle.com/">
+          <img src={Shuttler} width="100px" alt="" className="shuttlerPic" />
+        </a>
+      </div>
 
-      <SkillBox />
+      <div className="skillBoxDiv">
+        <SkillBox />
+      </div>
 
       <div className="footer">
         <a href="https://github.com/rickyprev">

@@ -6,7 +6,7 @@ import Navbar from "../../Components/NavBar/menu";
 const IndexPage = () => {
   return (
     <div className="containerHome">
-      <Navbar className="navBar" />
+      <Navbar />
 
       <div className="nameDisplay">
         <h3 className="fname">Keith</h3>
